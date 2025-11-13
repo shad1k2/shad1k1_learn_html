@@ -1,0 +1,61 @@
+html{
+  background-image: url("background.jpg");
+}
+
+h1{
+    font-family:sans-serif;
+    background: linear-gradient(to right, #ffffff, #3ccbff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+h2{
+    font-family: sans-serif;
+    color: #9edef5;
+}
+.links {
+    font-family: sans-serif;
+  display: flex;     
+  justify-content: center;
+}
+
+/* Выравниваем кнопки внутри прямоугольника */
+.glass-card {
+    /* 1. Включаем Flexbox, чтобы управлять кнопками */
+    display: flex; 
+    
+    /* 2. Располагаем кнопки ВЕРТИКАЛЬНО (в столбик) */
+    flex-direction: column; 
+
+    /* 3. Обязательные размеры и отступы для ВИДИМОСТИ */
+    width: 300px; 
+    padding: 30px; /* Увеличим отступ, чтобы прямоугольник был заметнее */
+    
+    /* 4. Фон и углы */
+    background-color: rgba(0, 0, 0, 0.1); /* Сделаем его СЕРЫМ прозрачным, чтобы он был виден на белом фоне */
+    border-radius: 15px; 
+    gap: 15px; /* Расстояние между кнопками */
+    
+    /* 5. Центрирование самого прямоугольника по горизонтали (если вы хотите это) */
+    margin: 20px auto; 
+}
+
+/* Добавим стили кнопкам, чтобы они не были очень широкими */
+.glass-card button {
+    width: 100%; /* Кнопка займет всю ширину прямоугольника */
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2); /* Твой синий цвет */
+    color: white;
+}
+.card-button {
+    font-family: serif;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.2); /* Яркий цвет для кнопок */
+    color: white;              /* Белый текст */
+    border-radius: 8px;        /* Закругление углов кнопок */
+    cursor: pointer;           /* Делает курсор похожим на указатель */
+}
